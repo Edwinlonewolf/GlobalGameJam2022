@@ -84,15 +84,7 @@
 			"LightPlatform",
 			"TextInput"
 		],
-		"subfolders": [
-			{
-				"items": [
-					"Sprite3Test_"
-				],
-				"subfolders": [],
-				"name": "SpriteTest"
-			}
-		]
+		"subfolders": []
 	},
 	"autosaveData": null,
 	"containers": [],

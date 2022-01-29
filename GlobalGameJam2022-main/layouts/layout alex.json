@@ -183,7 +183,7 @@
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Idle",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -212,9 +212,9 @@
 						}
 					},
 					"world": {
-						"x": 890,
-						"y": 599,
-						"width": 89.48742928478838,
+						"x": 853,
+						"y": 672,
+						"width": 178.97485856957675,
 						"height": 142.36636477125424,
 						"originX": 0.5,
 						"originY": 0.5,

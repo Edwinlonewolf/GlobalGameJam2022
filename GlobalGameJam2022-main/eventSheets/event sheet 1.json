@@ -183,6 +183,15 @@
 				}
 			],
 			"sid": 918807925956474
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player Animation",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 611962355629108
 		}
 	],
 	"sid": 390088224100290
