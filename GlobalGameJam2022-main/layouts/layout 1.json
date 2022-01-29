@@ -675,6 +675,64 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Text_Box",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 63,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 281,
+						"y": 1301.5,
+						"width": 418,
+						"height": 171,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text_Box",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 64,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 273,
+						"y": 1587,
+						"width": -19,
+						"height": 405,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 409318347715000,
@@ -1092,7 +1150,22 @@
 					},
 					"uid": 26,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 3,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 200,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
 						"x": 7562,
 						"y": 587,
@@ -1130,7 +1203,7 @@
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
-								"magnitude": 40,
+								"magnitude": 200,
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
@@ -1174,7 +1247,7 @@
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
-								"magnitude": 40,
+								"magnitude": 200,
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
@@ -1559,7 +1632,22 @@
 					},
 					"uid": 52,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 100,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
 						"x": 8909,
 						"y": 1720,
@@ -1588,10 +1676,25 @@
 					},
 					"uid": 50,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 3,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 200,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
-						"x": 7958,
-						"y": 1715,
+						"x": 8107,
+						"y": 1702,
 						"width": 140,
 						"height": 140,
 						"originX": 0.5,
@@ -1617,10 +1720,25 @@
 					},
 					"uid": 56,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 150,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
-						"x": 9259,
-						"y": 1720,
+						"x": 9226,
+						"y": 1712,
 						"width": 140,
 						"height": 140,
 						"originX": 0.5,
@@ -1708,8 +1826,8 @@
 						}
 					},
 					"world": {
-						"x": 660,
-						"y": 1656,
+						"x": 607,
+						"y": 1681,
 						"width": 216.87061889308336,
 						"height": 184.76557943449473,
 						"originX": 0.5,
@@ -1758,27 +1876,35 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "TextInput",
+					"type": "Text",
 					"properties": {
-						"text": "A band of fiendish rouges has disturbed the Gallowgrove. Yorick's Tomb lay bare. Fell spirits rise from their deathly beds and wander the boneyard...Ring the bell atop Yorick's Tomb and put the crypts to rest. Bury whatever gets in your way...",
-						"placeholder": "",
-						"tooltip": "",
+						"text": "A band of fiendish rouges has disturbed the Gallowgrove. Yorick's Tomb lays bare. Fell spirits rise from their deathly beds and wander the boneyard...",
+						"enable-bbcode": true,
+						"font": "Garamond",
+						"size": 15,
+						"line-height": 0,
+						"bold": false,
+						"italic": true,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
 						"initially-visible": true,
-						"enabled": true,
-						"read-only": true,
-						"spell-check": false,
-						"type": "text",
-						"auto-font-size": true,
-						"id": ""
+						"origin": "top-left"
 					},
 					"uid": 21,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -4,
-						"y": 1462,
-						"width": 1564,
-						"height": 21,
+						"x": 80,
+						"y": 1220,
+						"width": 402,
+						"height": 81,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1786,30 +1912,40 @@
 							1,
 							1,
 							1
-						]
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				},
 				{
-					"type": "TextInput",
+					"type": "Text",
 					"properties": {
 						"text": "...and a gravedigger's job is never DONE.",
-						"placeholder": "",
-						"tooltip": "",
+						"enable-bbcode": true,
+						"font": "Garamond",
+						"size": 15,
+						"line-height": 0,
+						"bold": false,
+						"italic": true,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
 						"initially-visible": true,
-						"enabled": true,
-						"read-only": true,
-						"spell-check": false,
-						"type": "text",
-						"auto-font-size": true,
-						"id": ""
+						"origin": "top-left"
 					},
 					"uid": 22,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2,
-						"y": 1484,
-						"width": 281,
+						"x": 78,
+						"y": 1294,
+						"width": 301,
 						"height": 21,
 						"originX": 0,
 						"originY": 0,
@@ -1818,31 +1954,41 @@
 							1,
 							1,
 							1
-						]
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				},
 				{
-					"type": "TextInput",
+					"type": "Text",
 					"properties": {
-						"text": "Ring the bell atop Yorick's Tomb and put the crypts to rest. Bury whatever gets in your way...",
-						"placeholder": "",
-						"tooltip": "",
+						"text": "Ring the bell atop Yorick's Tomb and put the crypts to rest. bury whatever gets in your way.",
+						"enable-bbcode": true,
+						"font": "Garamond",
+						"size": 15,
+						"line-height": 0,
+						"bold": false,
+						"italic": true,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
 						"initially-visible": true,
-						"enabled": true,
-						"read-only": true,
-						"spell-check": false,
-						"type": "text",
-						"auto-font-size": true,
-						"id": ""
+						"origin": "top-left"
 					},
 					"uid": 23,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1,
-						"y": 1509,
-						"width": 611,
-						"height": 22,
+						"x": 77,
+						"y": 1322,
+						"width": 400,
+						"height": 57,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1850,7 +1996,177 @@
 							1,
 							1,
 							1
-						]
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text",
+					"properties": {
+						"text": "<- and -> to MOVE",
+						"enable-bbcode": true,
+						"font": "Garamond",
+						"size": 16,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 59,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 504,
+						"y": 1533,
+						"width": 185,
+						"height": 28,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text",
+					"properties": {
+						"text": "SPACE BAR or UP Arrow Key to JUMP",
+						"enable-bbcode": true,
+						"font": "Garamond",
+						"size": 16,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 60,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1590,
+						"y": 1595,
+						"width": 280,
+						"height": 59,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text",
+					"properties": {
+						"text": "Left Mouse to SLAY",
+						"enable-bbcode": true,
+						"font": "Garamond",
+						"size": 16,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 61,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2173,
+						"y": 1354,
+						"width": 186,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text",
+					"properties": {
+						"text": "Right Mouse for PHANTOM-SIGHT",
+						"enable-bbcode": true,
+						"font": "Garamond",
+						"size": 16,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 62,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2172,
+						"y": 1384,
+						"width": 326,
+						"height": 26,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],

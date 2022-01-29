@@ -1,14 +1,14 @@
 {
-	"name": "Light_Enemy",
+	"name": "House",
 	"plugin-id": "Sprite",
-	"sid": 446006263248414,
+	"sid": 814426721114551,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Sin",
-			"name": "Sine",
-			"sid": 222589634317692
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 406517189661240
 		}
 	],
 	"effectTypes": [],
@@ -24,32 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4845316,
-						"collisionPoly": {
-							"points": [
-								0.16,
-								0.24,
-								0.48,
-								0.12,
-								0.76,
-								0.24,
-								0.88,
-								0.52,
-								0.76,
-								0.8,
-								0.48,
-								0.92,
-								0.16,
-								0.8,
-								0.08,
-								0.52
-							]
-						},
+						"imageSpriteId": 2437104,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 285790260061662,
+				"sid": 696712148822277,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

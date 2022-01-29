@@ -323,6 +323,30 @@
 								}
 							],
 							"sid": 517345074512438
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 656571234362085,
+									"parameters": {
+										"object": "Door"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 474150083267212,
+									"parameters": {
+										"layout": "Layout 3"
+									}
+								}
+							],
+							"sid": 163268337411292
 						}
 					],
 					"sid": 460042893867354
