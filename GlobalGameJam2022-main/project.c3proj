@@ -47,14 +47,6 @@
 			"bundled": false
 		},
 		{
-			"type": "plugin",
-			"id": "Text",
-			"name": "Text",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
 			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
@@ -95,18 +87,14 @@
 			"Mouse",
 			"Audio",
 			"TextInput",
-			"Gateway",
-			"Text",
-			"Door"
+			"Gateway"
 		],
 		"subfolders": [
 			{
 				"items": [
 					"BG_Color",
 					"BG_Environment",
-					"BG_Mausoleum",
-					"Text_Box",
-					"Tower"
+					"BG_Mausoleum"
 				],
 				"subfolders": [],
 				"name": "BG"
@@ -115,8 +103,7 @@
 				"items": [
 					"DeadBlocks",
 					"LightPlatform",
-					"Platform",
-					"House"
+					"Platform"
 				],
 				"subfolders": [],
 				"name": "Platform"
@@ -143,7 +130,6 @@
 			"Main Menu",
 			"Layout 1",
 			"Layout 2",
-			"Layout 3",
 			"Layout Alex"
 		],
 		"subfolders": []
