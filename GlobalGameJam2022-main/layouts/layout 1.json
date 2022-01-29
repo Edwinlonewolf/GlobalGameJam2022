@@ -1682,7 +1682,7 @@
 					},
 					"uid": 4,
 					"instanceVariables": {
-						"Direction": "Left",
+						"Direction": "Right",
 						"isWalk": false,
 						"isAttack": false
 					},

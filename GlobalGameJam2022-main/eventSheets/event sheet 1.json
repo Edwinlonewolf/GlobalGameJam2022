@@ -65,206 +65,172 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "isDark",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 767738355381788,
-							"parameters": {
-								"variable": "isDark"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 430864706925948,
+									"parameters": {
+										"variable": "isDark"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Platform",
+									"sid": 149893606393847,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Platform",
+									"sid": 648620566245864,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "LightPlatform",
+									"sid": 212292373736230,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "LightPlatform",
+									"sid": 881434271835236,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Dark_Enemy",
+									"sid": 591208747130117,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Dark_Enemy",
+									"sid": 567769522576871,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Light_Enemy",
+									"sid": 817850492756934,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Light_Enemy",
+									"sid": 833457717545571,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								}
+							],
+							"sid": 957385247189647
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 309210336731145
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "LightPlatform",
+									"sid": 180802473199964,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "LightPlatform",
+									"sid": 257057143579732,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Platform",
+									"sid": 257788105264696,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Platform",
+									"sid": 266715752552567,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Light_Enemy",
+									"sid": 560623615467893,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Light_Enemy",
+									"sid": 107324931825048,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Dark_Enemy",
+									"sid": 101506123982486,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Dark_Enemy",
+									"sid": 731104089740627,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								}
+							],
+							"sid": 560019187852224
 						}
 					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "Platform",
-							"sid": 912521467176062,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-collisions-enabled",
-							"objectClass": "Platform",
-							"sid": 240558760083718,
-							"parameters": {
-								"collisions": "enabled"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "LightPlatform",
-							"sid": 387024958434474,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-collisions-enabled",
-							"objectClass": "LightPlatform",
-							"sid": 822129274129484,
-							"parameters": {
-								"collisions": "disabled"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "Dark_Enemy",
-							"sid": 587834501356690,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-collisions-enabled",
-							"objectClass": "Dark_Enemy",
-							"sid": 498871207381387,
-							"parameters": {
-								"collisions": "enabled"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "Light_Enemy",
-							"sid": 727434340476755,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-collisions-enabled",
-							"objectClass": "Light_Enemy",
-							"sid": 616458909520343,
-							"parameters": {
-								"collisions": "disabled"
-							}
-						}
-					],
-					"sid": 660400732528066
+					"sid": 230241702625311
 				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 637853433436529
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "LightPlatform",
-							"sid": 278658573149535,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-collisions-enabled",
-							"objectClass": "LightPlatform",
-							"sid": 273744059416007,
-							"parameters": {
-								"collisions": "enabled"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "Platform",
-							"sid": 172984672142507,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-collisions-enabled",
-							"objectClass": "Platform",
-							"sid": 903093436351692,
-							"parameters": {
-								"collisions": "disabled"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "Light_Enemy",
-							"sid": 156717605371792,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-collisions-enabled",
-							"objectClass": "Light_Enemy",
-							"sid": 386924678614152,
-							"parameters": {
-								"collisions": "enabled"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "Dark_Enemy",
-							"sid": 963843042402858,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-collisions-enabled",
-							"objectClass": "Dark_Enemy",
-							"sid": 363879673296332,
-							"parameters": {
-								"collisions": "disabled"
-							}
-						}
-					],
-					"sid": 715501245335647
-				}
-			],
-			"sid": 560549359264943
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Player Trigger",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Player",
-							"sid": 605152547174744,
-							"parameters": {
-								"object": "Gateway"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 409899355181165,
-							"parameters": {
-								"layout": "Layout 2"
-							}
-						}
-					],
-					"sid": 441876581161760
-				}
-			],
-			"sid": 611962355629108
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Enemy",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
 				{
 					"eventType": "group",
 					"disabled": false,
@@ -278,7 +244,7 @@
 								{
 									"id": "on-collision-with-another-object",
 									"objectClass": "Player",
-									"sid": 238647043414872,
+									"sid": 692613595203676,
 									"parameters": {
 										"object": "Dark_Enemy"
 									}
@@ -288,10 +254,10 @@
 								{
 									"id": "restart-layout",
 									"objectClass": "System",
-									"sid": 866240762668707
+									"sid": 300193486469975
 								}
 							],
-							"sid": 302915951787065
+							"sid": 424310907174005
 						},
 						{
 							"eventType": "block",
@@ -299,7 +265,7 @@
 								{
 									"id": "on-collision-with-another-object",
 									"objectClass": "Player",
-									"sid": 128722499985406,
+									"sid": 138222802046863,
 									"parameters": {
 										"object": "Light_Enemy"
 									}
@@ -309,205 +275,249 @@
 								{
 									"id": "restart-layout",
 									"objectClass": "System",
-									"sid": 725958612603740
+									"sid": 725185933501991
 								}
 							],
-							"sid": 195037229842493
+							"sid": 351851464187419
 						}
 					],
-					"sid": 983560949444651
+					"sid": 364846255888757
 				}
 			],
-			"sid": 963070541508672
+			"sid": 560549359264943
 		},
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Player Mechanic",
+			"title": "Player",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "Player Trigger",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 907423109833768,
-							"parameters": {
-								"key": 39
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 912969943912569,
+									"parameters": {
+										"object": "Gateway"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 262195170471959,
+									"parameters": {
+										"layout": "Layout 2"
+									}
+								}
+							],
+							"sid": 517345074512438
 						}
 					],
-					"actions": [
+					"sid": 460042893867354
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Player Mechanic",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "set-boolean-instvar",
-							"objectClass": "Player",
-							"sid": 630171854831054,
-							"parameters": {
-								"instance-variable": "isWalk",
-								"value": "true"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 418435408271593,
+									"parameters": {
+										"key": 39
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player",
+									"sid": 140428640721455,
+									"parameters": {
+										"instance-variable": "isWalk",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Player",
+									"sid": 525546738139860,
+									"parameters": {
+										"instance-variable": "Direction",
+										"value": "\"Right\""
+									}
+								}
+							],
+							"sid": 887723903629404
 						},
 						{
-							"id": "set-instvar-value",
-							"objectClass": "Player",
-							"sid": 287918332436638,
-							"parameters": {
-								"instance-variable": "Direction",
-								"value": "\"Right\""
-							}
-						}
-					],
-					"sid": 822273685844197
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 838052014185683,
-							"parameters": {
-								"key": 37
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "Player",
-							"sid": 385199541781517,
-							"parameters": {
-								"instance-variable": "isWalk",
-								"value": "true"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 479875389215075,
+									"parameters": {
+										"key": 37
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player",
+									"sid": 694015977560775,
+									"parameters": {
+										"instance-variable": "isWalk",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Player",
+									"sid": 810308286664422,
+									"parameters": {
+										"instance-variable": "Direction",
+										"value": "\"Left\""
+									}
+								}
+							],
+							"sid": 872298760352596
 						},
 						{
-							"id": "set-instvar-value",
-							"objectClass": "Player",
-							"sid": 344898234138925,
-							"parameters": {
-								"instance-variable": "Direction",
-								"value": "\"Left\""
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-released",
+									"objectClass": "Keyboard",
+									"sid": 311035879080933,
+									"parameters": {
+										"key": 39
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player",
+									"sid": 258265015260786,
+									"parameters": {
+										"instance-variable": "isWalk",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 192281962479891
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-released",
+									"objectClass": "Keyboard",
+									"sid": 377606846953620,
+									"parameters": {
+										"key": 37
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player",
+									"sid": 664110994724065,
+									"parameters": {
+										"instance-variable": "isWalk",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 828103251552776
 						}
 					],
-					"sid": 758125541099130
+					"sid": 290091851593762
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "Player Animation",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "on-key-released",
-							"objectClass": "Keyboard",
-							"sid": 213090968736049,
-							"parameters": {
-								"key": 39
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 931966799056850,
+									"parameters": {
+										"instance-variable": "isWalk"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 410950827011489,
+									"parameters": {
+										"animation": "\"Walking_\" & Self.Direction",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 235372827661125
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 638420092465240,
+									"parameters": {
+										"instance-variable": "isWalk"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 286648133326299,
+									"parameters": {
+										"animation": "\"Idle_Standing_\" & Self.Direction",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 279248102528537
 						}
 					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "Player",
-							"sid": 438025436931464,
-							"parameters": {
-								"instance-variable": "isWalk",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 151205671216422
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-released",
-							"objectClass": "Keyboard",
-							"sid": 422405023164978,
-							"parameters": {
-								"key": 37
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "Player",
-							"sid": 103228002976711,
-							"parameters": {
-								"instance-variable": "isWalk",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 448242812434603
+					"sid": 525304186768184
 				}
 			],
-			"sid": 107759721871303
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Player Animation",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Player",
-							"sid": 679129206997614,
-							"parameters": {
-								"instance-variable": "isWalk"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Player",
-							"sid": 846656910426082,
-							"parameters": {
-								"animation": "\"Walking_\" & Self.Direction",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 958936140653640
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Player",
-							"sid": 942168781209643,
-							"parameters": {
-								"instance-variable": "isWalk"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Player",
-							"sid": 137408314485898,
-							"parameters": {
-								"animation": "\"Idle_Standing_\" & Self.Direction",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 925860551375522
-				}
-			],
-			"sid": 627221506930697
+			"sid": 812079061705480
 		}
 	],
 	"sid": 390088224100290

@@ -48,22 +48,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Platform",
-			"name": "Platform",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
@@ -77,6 +61,22 @@
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Platform",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "yj2i8bs5gbu",
@@ -84,20 +84,39 @@
 		"items": [
 			"Player",
 			"Keyboard",
-			"BG_Color",
-			"Platform",
 			"Mouse",
 			"Audio",
-			"DeadBlocks",
-			"LightPlatform",
 			"TextInput",
-			"Light_Enemy",
-			"Dark_Enemy",
-			"BG_Environment",
-			"BG_Mausoleum",
 			"Gateway"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"BG_Color",
+					"BG_Environment",
+					"BG_Mausoleum"
+				],
+				"subfolders": [],
+				"name": "BG"
+			},
+			{
+				"items": [
+					"DeadBlocks",
+					"LightPlatform",
+					"Platform"
+				],
+				"subfolders": [],
+				"name": "Platform"
+			},
+			{
+				"items": [
+					"Dark_Enemy",
+					"Light_Enemy"
+				],
+				"subfolders": [],
+				"name": "Enemy"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],
