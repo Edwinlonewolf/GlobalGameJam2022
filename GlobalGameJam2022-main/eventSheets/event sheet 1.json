@@ -2,25 +2,132 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "isDark",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "Used to set platform to true or false",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 667132509926870
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 911536682488603,
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 920027601614655,
 					"parameters": {
-						"key": 82
+						"mouse-button": "right",
+						"click-type": "clicked"
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "restart-layout",
+					"id": "toggle-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 623528070774634
+					"sid": 424965297100781,
+					"parameters": {
+						"variable": "isDark"
+					}
 				}
 			],
-			"sid": 533618798371076
+			"sid": 974582209907798
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 842530610069934,
+					"parameters": {
+						"variable": "isDark"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Platform",
+					"sid": 811112751015109,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Platform",
+					"sid": 319210947924471,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LightPlatform",
+					"sid": 157047002528275,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "LightPlatform",
+					"sid": 360893750842846,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				}
+			],
+			"sid": 567119433886030
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 236269324701543
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "LightPlatform",
+					"sid": 426909055560115,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "LightPlatform",
+					"sid": 320403388381997,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Platform",
+					"sid": 958161520096842,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Platform",
+					"sid": 699555143697140,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				}
+			],
+			"sid": 482874082581652
 		},
 		{
 			"eventType": "block",
@@ -60,52 +167,22 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-click",
-					"objectClass": "Mouse",
-					"sid": 660389610024316,
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 348217637848931,
 					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 175663259268070
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-click",
-					"objectClass": "Mouse",
-					"sid": 260473528039115,
-					"parameters": {
-						"mouse-button": "right",
-						"click-type": "clicked"
+						"key": 82
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-enabled",
-					"objectClass": "DeadBlocks",
-					"sid": 671187023505461,
-					"behaviorType": "Solid",
-					"parameters": {
-						"state": "enabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "Platform",
-					"sid": 437939191660998,
-					"behaviorType": "Solid",
-					"parameters": {
-						"state": "disabled"
-					}
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 290531865925801
 				}
 			],
-			"sid": 225145336809250
+			"sid": 918807925956474
 		}
 	],
 	"sid": 390088224100290
