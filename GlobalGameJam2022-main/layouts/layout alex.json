@@ -239,13 +239,17 @@
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Idle_Standing_Right",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 14,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Direction": "Left",
+						"isWalk": false,
+						"isAttack": false
+					},
 					"behaviors": {
 						"Platform": {
 							"properties": {
@@ -268,10 +272,10 @@
 						}
 					},
 					"world": {
-						"x": 853,
-						"y": 672,
-						"width": 178.97485856957675,
-						"height": 142.36636477125424,
+						"x": 935,
+						"y": 611,
+						"width": 216.87061889308336,
+						"height": 184.76557943449473,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
