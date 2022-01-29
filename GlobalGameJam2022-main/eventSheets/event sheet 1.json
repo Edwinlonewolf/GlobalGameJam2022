@@ -1,0 +1,112 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 911536682488603,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 623528070774634
+				}
+			],
+			"sid": 533618798371076
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 647185695825895,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-jump-sustain",
+					"objectClass": "Player",
+					"sid": 567614482385075,
+					"behaviorType": "Platform",
+					"parameters": {
+						"jump-sustain": "650"
+					}
+				},
+				{
+					"id": "set-double-jump",
+					"objectClass": "Player",
+					"sid": 632817876744317,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 155966578106700
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 660389610024316,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 175663259268070
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 260473528039115,
+					"parameters": {
+						"mouse-button": "right",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "DeadBlocks",
+					"sid": 671187023505461,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Platform",
+					"sid": 437939191660998,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 225145336809250
+		}
+	],
+	"sid": 390088224100290
+}
