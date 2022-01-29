@@ -1,21 +1,10 @@
 {
-	"name": "Platform",
+	"name": "Light_Enemy",
 	"plugin-id": "Sprite",
-	"sid": 672291675747388,
+	"sid": 446006263248414,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 983969852323675
-		},
-		{
-			"behaviorId": "Sin",
-			"name": "Sine",
-			"sid": 648155539355838
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -29,12 +18,32 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8228907,
+						"imageSpriteId": 4845316,
+						"collisionPoly": {
+							"points": [
+								0.16,
+								0.24,
+								0.48,
+								0.12,
+								0.76,
+								0.24,
+								0.88,
+								0.52,
+								0.76,
+								0.8,
+								0.48,
+								0.92,
+								0.16,
+								0.8,
+								0.08,
+								0.52
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 100282440093031,
+				"sid": 285790260061662,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

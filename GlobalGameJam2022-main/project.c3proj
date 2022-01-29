@@ -69,6 +69,14 @@
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "yj2i8bs5gbu",
@@ -82,7 +90,12 @@
 			"Audio",
 			"DeadBlocks",
 			"LightPlatform",
-			"TextInput"
+			"TextInput",
+			"Light_Enemy",
+			"Dark_Enemy",
+			"BG_Environment",
+			"BG_Mausoleum",
+			"Gateway"
 		],
 		"subfolders": []
 	},
@@ -97,6 +110,7 @@
 			"Opening",
 			"Main Menu",
 			"Layout 1",
+			"Layout 2",
 			"Layout Alex"
 		],
 		"subfolders": []
@@ -253,6 +267,6 @@
 		"cordovaAndroidScheme": "https"
 	},
 	"viewportWidth": 1400,
-	"viewportHeight": 1400,
+	"viewportHeight": 970,
 	"firstLayout": null
 }

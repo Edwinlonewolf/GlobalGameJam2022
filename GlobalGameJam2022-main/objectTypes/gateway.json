@@ -1,19 +1,14 @@
 {
-	"name": "Platform",
+	"name": "Gateway",
 	"plugin-id": "Sprite",
-	"sid": 672291675747388,
+	"sid": 824593126116069,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 983969852323675
-		},
-		{
-			"behaviorId": "Sin",
-			"name": "Sine",
-			"sid": 648155539355838
+			"sid": 658133255246402
 		}
 	],
 	"effectTypes": [],
@@ -29,12 +24,28 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8228907,
+						"imageSpriteId": 8479508,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.04,
+								0.32,
+								0.16,
+								0.72,
+								0.16,
+								1,
+								0.04,
+								1,
+								0.96,
+								0,
+								0.96
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 100282440093031,
+				"sid": 682080292352178,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

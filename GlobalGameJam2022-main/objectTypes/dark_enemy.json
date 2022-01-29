@@ -1,19 +1,14 @@
 {
-	"name": "Platform",
+	"name": "Dark_Enemy",
 	"plugin-id": "Sprite",
-	"sid": 672291675747388,
+	"sid": 923629565306060,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 983969852323675
-		},
-		{
 			"behaviorId": "Sin",
 			"name": "Sine",
-			"sid": 648155539355838
+			"sid": 190075390642482
 		}
 	],
 	"effectTypes": [],
@@ -29,12 +24,32 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8228907,
+						"imageSpriteId": 8446160,
+						"collisionPoly": {
+							"points": [
+								0.16,
+								0.16,
+								0.48,
+								0.04,
+								0.8,
+								0.2,
+								0.92,
+								0.48,
+								0.76,
+								0.8,
+								0.48,
+								0.88,
+								0.2,
+								0.8,
+								0.04,
+								0.52
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 100282440093031,
+				"sid": 673924347774330,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -80,6 +80,38 @@
 					"parameters": {
 						"collisions": "disabled"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Dark_Enemy",
+					"sid": 602211899285042,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Dark_Enemy",
+					"sid": 702011011323964,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Light_Enemy",
+					"sid": 630945130843225,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Light_Enemy",
+					"sid": 865170409516975,
+					"parameters": {
+						"collisions": "disabled"
+					}
 				}
 			],
 			"sid": 567119433886030
@@ -122,6 +154,38 @@
 					"id": "set-collisions-enabled",
 					"objectClass": "Platform",
 					"sid": 699555143697140,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Light_Enemy",
+					"sid": 459547565843573,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Light_Enemy",
+					"sid": 644155581804885,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Dark_Enemy",
+					"sid": 867342524246187,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Dark_Enemy",
+					"sid": 608649292737190,
 					"parameters": {
 						"collisions": "disabled"
 					}
@@ -190,8 +254,85 @@
 			"title": "Player Animation",
 			"description": "",
 			"isActiveOnStart": true,
-			"children": [],
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 605152547174744,
+							"parameters": {
+								"object": "Gateway"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 409899355181165,
+							"parameters": {
+								"layout": "Layout 2"
+							}
+						}
+					],
+					"sid": 441876581161760
+				}
+			],
 			"sid": 611962355629108
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Enemy",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 550350689489198,
+							"parameters": {
+								"object": "Dark_Enemy"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 668133533188944
+						}
+					],
+					"sid": 148107094399718
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 459999938149926,
+							"parameters": {
+								"object": "Light_Enemy"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 171059727046786
+						}
+					],
+					"sid": 825149736430184
+				}
+			],
+			"sid": 963070541508672
 		}
 	],
 	"sid": 390088224100290

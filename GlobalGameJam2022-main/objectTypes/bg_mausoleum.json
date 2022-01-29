@@ -1,21 +1,10 @@
 {
-	"name": "Platform",
+	"name": "BG_Mausoleum",
 	"plugin-id": "Sprite",
-	"sid": 672291675747388,
+	"sid": 497881590985893,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 983969852323675
-		},
-		{
-			"behaviorId": "Sin",
-			"name": "Sine",
-			"sid": 648155539355838
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -29,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8228907,
+						"imageSpriteId": 8720837,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 100282440093031,
+				"sid": 161728486607303,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
