@@ -239,7 +239,7 @@
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https"
 	},
-	"viewportWidth": 854,
-	"viewportHeight": 480,
+	"viewportWidth": 1400,
+	"viewportHeight": 1400,
 	"firstLayout": null
 }
