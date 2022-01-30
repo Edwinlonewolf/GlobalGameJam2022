@@ -827,6 +827,30 @@
 								}
 							],
 							"sid": 163268337411292
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 765278574667050,
+									"parameters": {
+										"object": "Bell_Goal"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 108092166751780,
+									"parameters": {
+										"layout": "Layout 4"
+									}
+								}
+							],
+							"sid": 337304847525037
 						}
 					],
 					"sid": 460042893867354

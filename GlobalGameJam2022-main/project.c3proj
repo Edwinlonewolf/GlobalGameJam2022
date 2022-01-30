@@ -97,7 +97,8 @@
 			"TextInput",
 			"Gateway",
 			"Text",
-			"Door"
+			"Door",
+			"Bell_Goal"
 		],
 		"subfolders": [
 			{
@@ -148,7 +149,8 @@
 		"items": [
 			"Layout 1",
 			"Layout 2",
-			"Layout 3"
+			"Layout 3",
+			"Layout 4"
 		],
 		"subfolders": []
 	},
