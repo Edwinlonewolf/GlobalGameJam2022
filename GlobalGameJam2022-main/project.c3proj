@@ -106,7 +106,10 @@
 					"BG_Environment",
 					"BG_Mausoleum",
 					"Text_Box",
-					"Tower"
+					"Tower",
+					"Living_Broken_Door",
+					"Tomb_and_House_Sprite",
+					"Dead_Broken_Door"
 				],
 				"subfolders": [],
 				"name": "BG"
@@ -116,7 +119,9 @@
 					"DeadBlocks",
 					"LightPlatform",
 					"Platform",
-					"House"
+					"House",
+					"Living_Closed_Door",
+					"Dead_Closed_Door"
 				],
 				"subfolders": [],
 				"name": "Platform"

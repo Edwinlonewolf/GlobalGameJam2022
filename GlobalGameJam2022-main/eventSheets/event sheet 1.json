@@ -17,7 +17,7 @@
 				{
 					"id": "on-click",
 					"objectClass": "Mouse",
-					"sid": 920027601614655,
+					"sid": 628085827407307,
 					"parameters": {
 						"mouse-button": "right",
 						"click-type": "clicked"
@@ -28,13 +28,31 @@
 				{
 					"id": "toggle-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 424965297100781,
+					"sid": 244330337454001,
 					"parameters": {
 						"variable": "isDark"
 					}
 				}
 			],
-			"sid": 974582209907798
+			"sid": 568163240432193
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-outside-layout",
+					"objectClass": "Player",
+					"sid": 150589182260079
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 613783675484293
+				}
+			],
+			"sid": 267094465352926
 		},
 		{
 			"eventType": "block",
@@ -42,7 +60,7 @@
 				{
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
-					"sid": 900207291789222,
+					"sid": 938206801220774,
 					"parameters": {
 						"key": 82
 					}
@@ -52,10 +70,10 @@
 				{
 					"id": "restart-layout",
 					"objectClass": "System",
-					"sid": 880901505983608
+					"sid": 891030739851323
 				}
 			],
-			"sid": 858447710672195
+			"sid": 546396779770701
 		},
 		{
 			"eventType": "group",
@@ -147,6 +165,54 @@
 									"parameters": {
 										"collisions": "disabled"
 									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Living_Closed_Door",
+									"sid": 745291892593146,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Living_Closed_Door",
+									"sid": 812437397238480,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Living_Broken_Door",
+									"sid": 332869092249018,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Dead_Closed_Door",
+									"sid": 250089503787872,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Dead_Closed_Door",
+									"sid": 419151214671300,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Dead_Broken_Door",
+									"sid": 362189524504491,
+									"parameters": {
+										"visibility": "visible"
+									}
 								}
 							],
 							"sid": 940218324917142
@@ -163,6 +229,22 @@
 							"actions": [
 								{
 									"id": "set-visible",
+									"objectClass": "Platform",
+									"sid": 152719400189536,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Platform",
+									"sid": 413677998914718,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "set-visible",
 									"objectClass": "LightPlatform",
 									"sid": 240703047005562,
 									"parameters": {
@@ -175,22 +257,6 @@
 									"sid": 163873792782344,
 									"parameters": {
 										"collisions": "enabled"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Platform",
-									"sid": 434548638989423,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-collisions-enabled",
-									"objectClass": "Platform",
-									"sid": 944680961499770,
-									"parameters": {
-										"collisions": "disabled"
 									}
 								},
 								{
@@ -223,6 +289,54 @@
 									"sid": 681691550976544,
 									"parameters": {
 										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Living_Closed_Door",
+									"sid": 732605065670461,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Living_Closed_Door",
+									"sid": 357050112895996,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Living_Broken_Door",
+									"sid": 849557365358578,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Dead_Closed_Door",
+									"sid": 815935475830456,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Dead_Closed_Door",
+									"sid": 306603026936933,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Dead_Broken_Door",
+									"sid": 249275872699130,
+									"parameters": {
+										"visibility": "invisible"
 									}
 								}
 							],
