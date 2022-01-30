@@ -139,12 +139,9 @@
 	},
 	"layouts": {
 		"items": [
-			"Opening",
-			"Main Menu",
 			"Layout 1",
 			"Layout 2",
-			"Layout 3",
-			"Layout Alex"
+			"Layout 3"
 		],
 		"subfolders": []
 	},
