@@ -1,0 +1,67 @@
+{
+	"name": "LivingGargoyleLeft",
+	"plugin-id": "Sprite",
+	"sid": 548730336667157,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 481459283704982
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1212,
+						"height": 606,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5906562,
+						"collisionPoly": {
+							"points": [
+								0.15841584158415842,
+								0.31683168316831684,
+								0.5,
+								0.019801980198019802,
+								0.7533005314691624,
+								0.01650182642165575,
+								0.9636964451755234,
+								0.22194701846283252,
+								0.9892739273927392,
+								0.5,
+								0.9900990099009901,
+								0.9801980198019802,
+								0.6716173127932916,
+								0.7079208424382474,
+								0.44018161886989504,
+								0.8061055098429765,
+								0.12953795379537955,
+								0.7392739273927392,
+								0.010725934119901243,
+								0.400989847214702
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 335859880461531,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

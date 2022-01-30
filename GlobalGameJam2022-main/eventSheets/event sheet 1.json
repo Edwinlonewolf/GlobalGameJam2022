@@ -213,6 +213,38 @@
 									"parameters": {
 										"visibility": "visible"
 									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "LivingGargoyleRight",
+									"sid": 979208649261028,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "LivingGargoyleRight",
+									"sid": 394960560927417,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "LivingGargoyleLeft",
+									"sid": 242138086117455,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "LivingGargoyleLeft",
+									"sid": 281442665620863,
+									"parameters": {
+										"visibility": "invisible"
+									}
 								}
 							],
 							"sid": 940218324917142
@@ -337,6 +369,38 @@
 									"sid": 249275872699130,
 									"parameters": {
 										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "LivingGargoyleLeft",
+									"sid": 957135924431280,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "LivingGargoyleLeft",
+									"sid": 751362165371574,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "LivingGargoyleRight",
+									"sid": 399688847040137,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "LivingGargoyleRight",
+									"sid": 767079821509170,
+									"parameters": {
+										"visibility": "visible"
 									}
 								}
 							],

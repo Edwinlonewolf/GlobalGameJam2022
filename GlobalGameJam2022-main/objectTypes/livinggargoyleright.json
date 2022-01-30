@@ -1,0 +1,72 @@
+{
+	"name": "LivingGargoyleRight",
+	"plugin-id": "Sprite",
+	"sid": 570946870045198,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 127005890368436
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 209241466026272
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1118,
+						"height": 559,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9546828,
+						"collisionPoly": {
+							"points": [
+								0.2597169527136653,
+								0.031549882725945014,
+								0.5487884208814449,
+								0.03268829162071577,
+								0.6749064144147554,
+								0.28411142371266546,
+								0.9284844428741907,
+								0.32537813507690544,
+								0.9852821597007642,
+								0.4739794096029335,
+								0.8986827622663497,
+								0.7258091490915062,
+								0.5569198243616852,
+								0.8185071735813243,
+								0.330907539073617,
+								0.6896242919366014,
+								0.008944543828264758,
+								0.9803220035778175,
+								0.014717889929383842,
+								0.24304753835656057
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 523778207635887,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -121,7 +121,9 @@
 					"Platform",
 					"House",
 					"Living_Closed_Door",
-					"Dead_Closed_Door"
+					"Dead_Closed_Door",
+					"LivingGargoyleLeft",
+					"LivingGargoyleRight"
 				],
 				"subfolders": [],
 				"name": "Platform"
