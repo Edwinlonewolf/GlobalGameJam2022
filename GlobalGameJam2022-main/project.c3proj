@@ -157,7 +157,13 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "GlobalGameJam2022.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 165988252537037
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

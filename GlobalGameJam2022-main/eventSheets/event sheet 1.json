@@ -242,15 +242,26 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "every-x-seconds",
+									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 950924397976506,
+									"sid": 816191766216139,
 									"parameters": {
-										"interval-seconds": "1.0"
+										"first-value": "Platform.Sine.Value",
+										"comparison": 5,
+										"second-value": "Platform.Sine.Magnitude-1"
 									}
 								}
 							],
 							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Platform",
+									"sid": 505810196009478,
+									"parameters": {
+										"instance-variable": "Direction",
+										"value": "\"Left\""
+									}
+								},
 								{
 									"id": "set-animation",
 									"objectClass": "Platform",
@@ -259,18 +270,189 @@
 										"animation": "\"Phantom_Platform_\" & Self.Direction",
 										"from": "beginning"
 									}
+								}
+							],
+							"sid": 307100140288022
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 333878276481240,
+									"parameters": {
+										"first-value": "Platform.Sine.Value",
+										"comparison": 3,
+										"second-value": "- Platform.Sine.Magnitude+1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Platform",
+									"sid": 635123930938965,
+									"parameters": {
+										"instance-variable": "Direction",
+										"value": "\"Right\""
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Platform",
+									"sid": 645441955610519,
+									"parameters": {
+										"animation": "\"Phantom_Platform_\" & Self.Direction",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 553613196994765
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 859524196696364,
+									"parameters": {
+										"first-value": "Light_Enemy.Sine.Value",
+										"comparison": 5,
+										"second-value": "Light_Enemy.Sine.Magnitude-1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Light_Enemy",
+									"sid": 508764555402922,
+									"parameters": {
+										"instance-variable": "Direction",
+										"value": "\"Left\""
+									}
 								},
 								{
 									"id": "set-animation",
 									"objectClass": "Light_Enemy",
-									"sid": 549618875632249,
+									"sid": 774826694170086,
 									"parameters": {
 										"animation": "\"Thief_Walking_\" & Self.Direction",
 										"from": "beginning"
 									}
 								}
 							],
-							"sid": 307100140288022
+							"sid": 137276490698457
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 703500435039459,
+									"parameters": {
+										"first-value": "Light_Enemy.Sine.Value",
+										"comparison": 3,
+										"second-value": "- Light_Enemy.Sine.Magnitude+1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Light_Enemy",
+									"sid": 906459806174462,
+									"parameters": {
+										"instance-variable": "Direction",
+										"value": "\"Right\""
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Light_Enemy",
+									"sid": 948107170573235,
+									"parameters": {
+										"animation": "\"Thief_Walking_\" & Self.Direction",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 496444847916924
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 872721993817748,
+									"parameters": {
+										"first-value": "Dark_Enemy.Sine.Value",
+										"comparison": 5,
+										"second-value": "Dark_Enemy.Sine.Magnitude-1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Dark_Enemy",
+									"sid": 974340330175395,
+									"parameters": {
+										"instance-variable": "Direction",
+										"value": "\"Left\""
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Dark_Enemy",
+									"sid": 528657220089029,
+									"parameters": {
+										"animation": "\"Ghost_Walking_\" & Self.Direction",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 475620410467151
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 817825341816739,
+									"parameters": {
+										"first-value": "Dark_Enemy.Sine.Value",
+										"comparison": 3,
+										"second-value": "- Dark_Enemy.Sine.Magnitude+1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Dark_Enemy",
+									"sid": 536563920433030,
+									"parameters": {
+										"instance-variable": "Direction",
+										"value": "\"Right\""
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Dark_Enemy",
+									"sid": 143424419548582,
+									"parameters": {
+										"animation": "\"Ghost_Walking_\" & Self.Direction",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 553710017667969
 						}
 					],
 					"sid": 772630011640419

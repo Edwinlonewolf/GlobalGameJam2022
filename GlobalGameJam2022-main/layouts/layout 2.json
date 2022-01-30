@@ -253,8 +253,8 @@
 					"world": {
 						"x": 630,
 						"y": 1731,
-						"width": 299,
-						"height": 66,
+						"width": 3588,
+						"height": 792,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -725,13 +725,15 @@
 					"type": "Dark_Enemy",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Ghost_Walking_Right",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 81,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Direction": "Right"
+					},
 					"behaviors": {
 						"Sine": {
 							"properties": {
@@ -751,8 +753,8 @@
 					"world": {
 						"x": 2638,
 						"y": 1069,
-						"width": 140,
-						"height": 140,
+						"width": 1680.0000000000002,
+						"height": 1064,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -849,8 +851,8 @@
 					"world": {
 						"x": 5158,
 						"y": 1600,
-						"width": 210,
-						"height": 66,
+						"width": 2520,
+						"height": 792,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
