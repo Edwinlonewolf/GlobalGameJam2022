@@ -813,7 +813,9 @@
 						"live-preview": false
 					},
 					"uid": 17,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Direction": "Right"
+					},
 					"behaviors": {
 						"Solid": {
 							"properties": {
@@ -893,13 +895,15 @@
 					"type": "Light_Enemy",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Thief_Walking_Right",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 26,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Direction": "Right"
+					},
 					"behaviors": {
 						"Sine": {
 							"properties": {
@@ -919,8 +923,8 @@
 					"world": {
 						"x": 7562,
 						"y": 587,
-						"width": 140,
-						"height": 140,
+						"width": 1400.0000000000002,
+						"height": 1680.0000000000002,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1031,7 +1035,9 @@
 						"live-preview": false
 					},
 					"uid": 31,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Direction": "Right"
+					},
 					"behaviors": {
 						"Solid": {
 							"properties": {
@@ -1081,7 +1087,9 @@
 						"live-preview": false
 					},
 					"uid": 48,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Direction": "Right"
+					},
 					"behaviors": {
 						"Solid": {
 							"properties": {
@@ -1287,7 +1295,9 @@
 						"live-preview": false
 					},
 					"uid": 54,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Direction": "Right"
+					},
 					"behaviors": {
 						"Solid": {
 							"properties": {
@@ -1337,7 +1347,9 @@
 						"live-preview": false
 					},
 					"uid": 55,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Direction": "Right"
+					},
 					"behaviors": {
 						"Solid": {
 							"properties": {
@@ -1381,13 +1393,15 @@
 					"type": "Light_Enemy",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Thief_Walking_Right",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 52,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Direction": "Right"
+					},
 					"behaviors": {
 						"Sine": {
 							"properties": {
@@ -1407,8 +1421,8 @@
 					"world": {
 						"x": 8909,
 						"y": 1720,
-						"width": 140,
-						"height": 140,
+						"width": 1400.0000000000002,
+						"height": 1680.0000000000002,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1425,13 +1439,15 @@
 					"type": "Light_Enemy",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Thief_Walking_Right",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 50,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Direction": "Right"
+					},
 					"behaviors": {
 						"Sine": {
 							"properties": {
@@ -1451,8 +1467,8 @@
 					"world": {
 						"x": 8107,
 						"y": 1702,
-						"width": 140,
-						"height": 140,
+						"width": 1400.0000000000002,
+						"height": 1680.0000000000002,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1469,13 +1485,15 @@
 					"type": "Light_Enemy",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Thief_Walking_Right",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 56,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Direction": "Right"
+					},
 					"behaviors": {
 						"Sine": {
 							"properties": {
@@ -1495,8 +1513,8 @@
 					"world": {
 						"x": 9226,
 						"y": 1712,
-						"width": 140,
-						"height": 140,
+						"width": 1400.0000000000002,
+						"height": 1680.0000000000002,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

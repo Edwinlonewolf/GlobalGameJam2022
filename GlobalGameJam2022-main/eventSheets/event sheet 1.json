@@ -67,32 +67,6 @@
 				{
 					"eventType": "group",
 					"disabled": false,
-					"title": "Platform Animation",
-					"description": "",
-					"isActiveOnStart": true,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 924040154291028,
-									"parameters": {
-										"animation": "\"Phantom_Platform_\" & Self.Direction",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 307100140288022
-						}
-					],
-					"sid": 772630011640419
-				},
-				{
-					"eventType": "group",
-					"disabled": false,
 					"title": "isDark",
 					"description": "",
 					"isActiveOnStart": true,
@@ -103,7 +77,7 @@
 								{
 									"id": "compare-boolean-eventvar",
 									"objectClass": "System",
-									"sid": 430864706925948,
+									"sid": 556417349302195,
 									"parameters": {
 										"variable": "isDark"
 									}
@@ -113,7 +87,7 @@
 								{
 									"id": "set-visible",
 									"objectClass": "Platform",
-									"sid": 149893606393847,
+									"sid": 435955279218407,
 									"parameters": {
 										"visibility": "visible"
 									}
@@ -121,7 +95,7 @@
 								{
 									"id": "set-collisions-enabled",
 									"objectClass": "Platform",
-									"sid": 648620566245864,
+									"sid": 600358760621276,
 									"parameters": {
 										"collisions": "enabled"
 									}
@@ -129,7 +103,7 @@
 								{
 									"id": "set-visible",
 									"objectClass": "LightPlatform",
-									"sid": 212292373736230,
+									"sid": 864421303297647,
 									"parameters": {
 										"visibility": "invisible"
 									}
@@ -137,7 +111,7 @@
 								{
 									"id": "set-collisions-enabled",
 									"objectClass": "LightPlatform",
-									"sid": 881434271835236,
+									"sid": 684270987417875,
 									"parameters": {
 										"collisions": "disabled"
 									}
@@ -145,7 +119,7 @@
 								{
 									"id": "set-visible",
 									"objectClass": "Dark_Enemy",
-									"sid": 591208747130117,
+									"sid": 438657712417055,
 									"parameters": {
 										"visibility": "visible"
 									}
@@ -153,7 +127,7 @@
 								{
 									"id": "set-collisions-enabled",
 									"objectClass": "Dark_Enemy",
-									"sid": 567769522576871,
+									"sid": 437686101539710,
 									"parameters": {
 										"collisions": "enabled"
 									}
@@ -161,7 +135,7 @@
 								{
 									"id": "set-visible",
 									"objectClass": "Light_Enemy",
-									"sid": 817850492756934,
+									"sid": 765826566191425,
 									"parameters": {
 										"visibility": "invisible"
 									}
@@ -169,13 +143,13 @@
 								{
 									"id": "set-collisions-enabled",
 									"objectClass": "Light_Enemy",
-									"sid": 833457717545571,
+									"sid": 565631042788142,
 									"parameters": {
 										"collisions": "disabled"
 									}
 								}
 							],
-							"sid": 957385247189647
+							"sid": 940218324917142
 						},
 						{
 							"eventType": "block",
@@ -183,14 +157,14 @@
 								{
 									"id": "else",
 									"objectClass": "System",
-									"sid": 309210336731145
+									"sid": 290515980226013
 								}
 							],
 							"actions": [
 								{
 									"id": "set-visible",
 									"objectClass": "LightPlatform",
-									"sid": 180802473199964,
+									"sid": 240703047005562,
 									"parameters": {
 										"visibility": "visible"
 									}
@@ -198,7 +172,7 @@
 								{
 									"id": "set-collisions-enabled",
 									"objectClass": "LightPlatform",
-									"sid": 257057143579732,
+									"sid": 163873792782344,
 									"parameters": {
 										"collisions": "enabled"
 									}
@@ -206,7 +180,7 @@
 								{
 									"id": "set-visible",
 									"objectClass": "Platform",
-									"sid": 257788105264696,
+									"sid": 434548638989423,
 									"parameters": {
 										"visibility": "invisible"
 									}
@@ -214,7 +188,7 @@
 								{
 									"id": "set-collisions-enabled",
 									"objectClass": "Platform",
-									"sid": 266715752552567,
+									"sid": 944680961499770,
 									"parameters": {
 										"collisions": "disabled"
 									}
@@ -222,7 +196,7 @@
 								{
 									"id": "set-visible",
 									"objectClass": "Light_Enemy",
-									"sid": 560623615467893,
+									"sid": 698540741546237,
 									"parameters": {
 										"visibility": "visible"
 									}
@@ -230,7 +204,7 @@
 								{
 									"id": "set-collisions-enabled",
 									"objectClass": "Light_Enemy",
-									"sid": 107324931825048,
+									"sid": 611293081678126,
 									"parameters": {
 										"collisions": "enabled"
 									}
@@ -238,7 +212,7 @@
 								{
 									"id": "set-visible",
 									"objectClass": "Dark_Enemy",
-									"sid": 101506123982486,
+									"sid": 990299960670113,
 									"parameters": {
 										"visibility": "invisible"
 									}
@@ -246,16 +220,60 @@
 								{
 									"id": "set-collisions-enabled",
 									"objectClass": "Dark_Enemy",
-									"sid": 731104089740627,
+									"sid": 681691550976544,
 									"parameters": {
 										"collisions": "disabled"
 									}
 								}
 							],
-							"sid": 560019187852224
+							"sid": 890293177123185
 						}
 					],
-					"sid": 230241702625311
+					"sid": 568316576322211
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Platform and Enemy Animation",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 950924397976506,
+									"parameters": {
+										"interval-seconds": "1.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Platform",
+									"sid": 194383880259955,
+									"parameters": {
+										"animation": "\"Phantom_Platform_\" & Self.Direction",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Light_Enemy",
+									"sid": 549618875632249,
+									"parameters": {
+										"animation": "\"Thief_Walking_\" & Self.Direction",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 307100140288022
+						}
+					],
+					"sid": 772630011640419
 				},
 				{
 					"eventType": "group",

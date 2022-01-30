@@ -225,7 +225,9 @@
 						"live-preview": false
 					},
 					"uid": 67,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Direction": "Right"
+					},
 					"behaviors": {
 						"Solid": {
 							"properties": {
@@ -677,13 +679,15 @@
 					"type": "Light_Enemy",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Thief_Walking_Right",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 80,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Direction": "Right"
+					},
 					"behaviors": {
 						"Sine": {
 							"properties": {
@@ -703,8 +707,8 @@
 					"world": {
 						"x": 6603,
 						"y": 1678,
-						"width": 140,
-						"height": 140,
+						"width": 1400.0000000000002,
+						"height": 1680.0000000000002,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -765,13 +769,15 @@
 					"type": "Light_Enemy",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Thief_Walking_Right",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 82,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Direction": "Right"
+					},
 					"behaviors": {
 						"Sine": {
 							"properties": {
@@ -791,8 +797,8 @@
 					"world": {
 						"x": 4834,
 						"y": 1057,
-						"width": 140,
-						"height": 140,
+						"width": 1400.0000000000002,
+						"height": 1680.0000000000002,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -815,7 +821,9 @@
 						"live-preview": false
 					},
 					"uid": 83,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Direction": "Right"
+					},
 					"behaviors": {
 						"Solid": {
 							"properties": {
