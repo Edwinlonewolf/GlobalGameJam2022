@@ -67,6 +67,32 @@
 				{
 					"eventType": "group",
 					"disabled": false,
+					"title": "Platform Animation",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 924040154291028,
+									"parameters": {
+										"animation": "\"Phantom_Platform_\" & Self.Direction",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 307100140288022
+						}
+					],
+					"sid": 772630011640419
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
 					"title": "isDark",
 					"description": "",
 					"isActiveOnStart": true,
@@ -248,6 +274,15 @@
 									"parameters": {
 										"object": "Dark_Enemy"
 									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 550329244597583,
+									"parameters": {
+										"instance-variable": "isAttack"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -265,10 +300,48 @@
 								{
 									"id": "on-collision-with-another-object",
 									"objectClass": "Player",
+									"sid": 711679083729043,
+									"parameters": {
+										"object": "Dark_Enemy"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 135183961894321,
+									"parameters": {
+										"instance-variable": "isAttack"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Dark_Enemy",
+									"sid": 718811285732059
+								}
+							],
+							"sid": 332130709470142
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
 									"sid": 138222802046863,
 									"parameters": {
 										"object": "Light_Enemy"
 									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 556742918941637,
+									"parameters": {
+										"instance-variable": "isAttack"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -279,6 +352,35 @@
 								}
 							],
 							"sid": 351851464187419
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 853831833455184,
+									"parameters": {
+										"object": "Light_Enemy"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 845448961000284,
+									"parameters": {
+										"instance-variable": "isAttack"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Light_Enemy",
+									"sid": 264673212070100
+								}
+							],
+							"sid": 346913341013754
 						}
 					],
 					"sid": 364846255888757
@@ -371,7 +473,7 @@
 										{
 											"id": "key-is-down",
 											"objectClass": "Keyboard",
-											"sid": 415570998129527,
+											"sid": 266222430138566,
 											"parameters": {
 												"key": 39
 											}
@@ -397,7 +499,8 @@
 											}
 										}
 									],
-									"sid": 779614700480502
+									"sid": 779614700480502,
+									"isOrBlock": true
 								},
 								{
 									"eventType": "block",
@@ -431,7 +534,8 @@
 											}
 										}
 									],
-									"sid": 167520373714397
+									"sid": 167520373714397,
+									"isOrBlock": true
 								},
 								{
 									"eventType": "block",
@@ -456,7 +560,8 @@
 											}
 										}
 									],
-									"sid": 255200227927354
+									"sid": 255200227927354,
+									"isOrBlock": true
 								},
 								{
 									"eventType": "block",
@@ -481,7 +586,8 @@
 											}
 										}
 									],
-									"sid": 316684428055316
+									"sid": 316684428055316,
+									"isOrBlock": true
 								}
 							],
 							"sid": 607290798122135
